@@ -26,7 +26,7 @@ int dlclose(void *handle) { return 0; }
 
 void android_update_LD_LIBRARY_PATH(const char* ld_library_path) { }
 
-#if defined(__arm__)
+#if defined(__arm__) || defined(__aarch64__)
 
 void *dl_unwind_find_exidx(void *pc, int *pcount) { return 0; }
 
